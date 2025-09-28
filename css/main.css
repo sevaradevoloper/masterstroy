@@ -862,6 +862,39 @@ body.main__page {
 
 
 
+.production{
+    padding: 50px 0;
+    background: #404040;
+}
+.production__container ul{
+    display: flex;
+    justify-content: space-between;
+}
+.production__items div{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 35px;
+}
+.production__img{
+    max-width: 231px;
+    height: 74px;
+    background: #FFFFFF;
+    border-radius: 30px;
+}
+.production__items p{
+    font-family: Montserrat;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+
+
+}
+
+
+
 
 
 
