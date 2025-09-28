@@ -927,10 +927,9 @@ body.main__page {
     }
 
     .about__container img {
-        max-width    : 548px;
-        max-height   : 548px;
+        max-width    : 448px;
+        max-height   : 448px;
         border-radius: 35px;
         margin-bottom: 15px;
-        overflow     : hidden;
     }
 }
