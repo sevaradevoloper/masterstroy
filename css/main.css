@@ -807,7 +807,7 @@ body.main__page {
     }
 
     .header:hover {
-        padding-bottom: 60px;
+        padding-bottom: 80px;
     }
 
     .icons__button {
@@ -868,7 +868,7 @@ body.main__page {
     }
 
     .card {
-        width        : 150px;
+        width        : 140px;
         height       : 180px;
         background   : #FFFFFF;
         transition   : all 0.4s;
@@ -881,7 +881,7 @@ body.main__page {
     }
 
     .product__box img {
-        width : 146px;
+        width : 126px;
         height: 94px;
     }
 
@@ -930,5 +930,6 @@ body.main__page {
         max-width    : 748px;
         max-height   : 748px;
         margin-bottom: 15px;
+        overflow     : hidden;
     }
 }
