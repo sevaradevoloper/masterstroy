@@ -927,8 +927,8 @@ body.main__page {
     }
 
     .about__container img {
-        max-width    : 448px;
-        max-height   : 448px;
+        max-width    : 348px;
+        max-height   : 348px;
         border-radius: 35px;
         margin-bottom: 15px;
     }
