@@ -60,3 +60,74 @@
         });
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.querySelectorAll('.goods__item').forEach(item => {
+  const colors = item.querySelectorAll('.goods__color');
+  const sidebar = item.querySelector('.goods__sidebar');
+  const colorText = item.querySelector('.goods__sidebar-text.color');
+  const priceText = item.querySelector('.goods__sidebar-text.price');
+  const image = item.querySelector('.goods__image');
+
+  // Функция для скрытия всех боковых панелей
+  function hideAllSidebars() {
+    document.querySelectorAll('.goods__sidebar.active').forEach(activeSidebar => {
+      activeSidebar.classList.remove('active');
+    });
+  }
+
+  // Клик по цветам
+  colors.forEach(color => {
+    color.addEventListener('click', (e) => {
+      // Сначала скрываем все открытые панели
+      hideAllSidebars();
+      
+      colors.forEach(c => c.classList.remove('active'));
+      e.target.classList.add('active');
+      const selected = e.target.dataset.color;
+      colorText.textContent = selected;
+      priceText.textContent = "Цена: 470 тг / м²";
+      sidebar.classList.add('active');
+    });
+  });
+
+  // Клик по картинке
+  image.addEventListener('click', () => {
+    // Сначала скрываем все открытые панели
+    hideAllSidebars();
+    sidebar.classList.add('active');
+  });
+});
+
+// Обработчик клика по документу для закрытия боковой панели
+document.addEventListener('click', (e) => {
+  // Если клик был не по боковой панели, не по цветам, не по изображению и не по плюсу
+  if (!e.target.closest('.goods__sidebar') && 
+      !e.target.closest('.goods__color') && 
+      !e.target.closest('.goods__image') &&
+      !e.target.closest('.goods__plus')) {
+    // Скрываем все активные боковые панели
+    document.querySelectorAll('.goods__sidebar.active').forEach(sidebar => {
+      sidebar.classList.remove('active');
+    });
+  }
+});
