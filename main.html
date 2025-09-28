@@ -12,82 +12,214 @@
 </head>
 
 <body class="main__page">
-    <!-- header------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-    <div class="header">
-        <div class="container">
-            <div class="header__container">
-                <div class="icons">
-                    <div class="icons__row">
-                        <div class="icons__item" onclick="toggleText('map')">
-                            <i class="fas fa-map-marker-alt icons__icon"></i>
-                            <div id="map" class="icons__text">
-                                <a href="https://maps.google.com/?q=Moscow" target="_blank"
-                                    class="icons__link">Волоколамский район,пос. <br> Чисмена, ул. Центральная, 1</a>
+    <header>
+        <!-- header------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        <div class="header">
+            <div class="container">
+                <div class="header__container">
+                    <div class="icons">
+                        <div class="icons__row">
+                            <div class="icons__item" onclick="toggleText('map')">
+                                <i class="fas fa-map-marker-alt icons__icon"></i>
+                                <div id="map" class="icons__text">
+                                    <a href="https://maps.google.com/?q=Moscow" target="_blank"
+                                        class="icons__link">Волоколамский район,пос. <br> Чисмена, ул. Центральная,
+                                        1</a>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="icons__item" onclick="toggleText('time')">
-                            <i class="fas fa-clock icons__icon"></i>
-                            <div id="time" class="icons__text">
-                                Режим работы: <br> 8:00 – 20:00
+                            <div class="icons__item" onclick="toggleText('time')">
+                                <i class="fas fa-clock icons__icon"></i>
+                                <div id="time" class="icons__text">
+                                    Режим работы: <br> 8:00 – 20:00
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="icons__item" onclick="toggleText('phone')">
-                            <i class="fas fa-phone icons__icon"></i>
-                            <div id="phone" class="icons__text">
-                                <div style="display: flex; gap: 40px;" class="icons__phone">
-                                    <div style="display: flex; flex-direction: column; gap: 5px;" class="phone__two">
-                                        <a href="tel:+74951234567" class="icons__link">+7 (926) 105-94-14</a>
-                                        <a href="tel:+74957654321" class="icons__link">+7 (910) 470-67-97</a>
-                                    </div>
-                                    <div>
-                                        <a href="tel:+74959876543" class="icons__link">+7 (499) 994-90-99</a>
+                            <div class="icons__item" onclick="toggleText('phone')">
+                                <i class="fas fa-phone icons__icon"></i>
+                                <div id="phone" class="icons__text">
+                                    <div style="display: flex; gap: 40px;" class="icons__phone">
+                                        <div style="display: flex; flex-direction: column; gap: 5px;"
+                                            class="phone__two">
+                                            <a href="tel:+74951234567" class="icons__link">+7 (926) 105-94-14</a>
+                                            <a href="tel:+74957654321" class="icons__link">+7 (910) 470-67-97</a>
+                                        </div>
+                                        <div>
+                                            <a href="tel:+74959876543" class="icons__link">+7 (499) 994-90-99</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <button class="icons__button">Заказать звонок</button>
                         </div>
-                        <button class="icons__button">Заказать звонок</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--navigation------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-    <div class="navigation">
-        <div class="container">
-            <div class="navigation__container">
-                <nav class="navigation">
-                    <div class="nav__container">
-                         <a href="#" class="logo"><img src="./img/logo.svg" alt=""></a>
-                        <div class="nav__links" id="navLinks">
-                            
-                            <div class="mobile-close-btn" id="mobileCloseBtn">×</div>
+        <!--navigation------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        <div class="navigation">
+            <div class="container">
+                <div class="navigation__container">
+                    <nav class="navigation">
+                        <div class="nav__container">
+                            <a href="#" class="logo"><img src="./img/logo.svg" alt="logo"></a>
+                            <div class="nav__links" id="navLinks">
 
-                            <a href="#">О компании</a>
-                            <a href="#">Укладка тротуарной плитки</a>
-                            <a href="#">Портфолио</a>
-                            <a href="#">Полезно знать</a>
-                            <a href="#">Доставка и оплата</a>
-                            <a href="#">Контакты</a>
-                        </div>
+                                <div class="mobile-close-btn" id="mobileCloseBtn">×</div>
 
-                        <div class="hamburger" id="hamburger-menu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                                <a href="#">О компании</a>
+                                <a href="#">Укладка тротуарной плитки</a>
+                                <a href="#">Портфолио</a>
+                                <a href="#">Полезно знать</a>
+                                <a href="#">Доставка и оплата</a>
+                                <a href="#">Контакты</a>
+                            </div>
+
+                            <div class="hamburger" id="hamburger-menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
                         </div>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- header------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-    <div class="header">
-        <div class="container">
-            <div class="header__container"></div>
+    </header>
+    <main>
+        <!-- hero------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        <div class="hero">
+            <div class="container">
+                <div class="hero__container">
+                    <h1>Тротуарная плитка в Волоколамске напрямую от производителя</h1>
+                    <p>Вам нужна качественная и недорогая тротуарная плитка в Волоколамске? Мы готовы предложить
+                        отличную возможность приобрести современные модели с высокими показателями эстетики и
+                        механической стойкости напрямую от производителя – компании «Мастер Строй».</p>
+                    <button class="button">
+                        <div class="button__outer">
+                            <div class="button__inner">
+                                <span class="button__text">Каталог</span>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
         </div>
-    </div>
+        <!-- product------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        <div class="product">
+            <div class="container">
+                <div class="product__container">
+                    <h2 style="text-align: center; margin-bottom: 30px;">Каталог продукции</h2>
+                    <div class="product__box">
+                        <div class="card">
+                            <div class="first__content">
+                                <img src="./img/product.svg" alt="Прессованная плитка">
+                            </div>
+                            <div class="second__content">
+                                Прессованная плитка
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="first__content">
+                                <img src="./img/product2.svg" alt="Вибролитая плитка">
+                            </div>
+                            <div class="second__content">
+                                Вибролитая плитка
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="first__content">
+                                <img src="./img/product3.svg" alt="Садовый бордюр">
+                            </div>
+                            <div class="second__content">
+                                Садовый бордюр
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="first__content">
+                                <img src="./img/product4.svg" alt="Дорожный бордюр">
+                            </div>
+                            <div class="second__content">
+                                Дорожный бордюр
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="first__content">
+                                <img src="./img/product5.svg" alt="Строительные блоки">
+                            </div>
+                            <div class="second__content">
+                                Строительные блоки
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="first__content">
+                                <img src="./img/product6.svg" alt="Фасадная плитка">
+                            </div>
+                            <div class="second__content">
+                                Фасадная плитка
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="first__content">
+                                <img src="./img/product7.svg" alt="Водостоки тротуарные">
+                            </div>
+                            <div class="second__content">
+                                Водостоки тротуарные
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="first__content">
+                                <img src="./img/product8.svg" alt="Крышки на столбы">
+                            </div>
+                            <div class="second__content">
+                                Крышки на столбы
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button">
+                        <div class="button__outer">
+                            <div class="button__inner">
+                                <span class="button__text">Больше товаров</span>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- about------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        <div class="about">
+            <div class="container">
+                <div class="about__container">
+                    <img src="./img/about.svg" alt="строительство">
+                    <div class="about__box">
+                        <h2>О нас</h2>
+                        <h4>«Мастер Строй» - надежная и недорогая тротуарная плитка в Волоколамском районе</h4>
+                        <p>Наша компания готова помочь вам и с первым и со вторым аспектом данной задачи. В нашем каталоге вы сможете подобрать желаемый вариант материала и сразу заказать профессиональную укладку на вашем участке. Вниманию покупателей всегда доступна качественная и прочная тротуарная плитка от производителя по оптимальной стоимости.Если вам нужна надежная тротуарная плитка, купить  в Волоколамском районе такой материал можно у нас, цена продукции из каталога вас приятно удивит и не ударит по бюджету. Оформить заказ можно прямо на сайте.<br><br> Если в процессе выбора вам понадобится консультация специалиста, вы всегда можете заказать обратный звонок, используя специальную функцию на сайте, либо самостоятельно позвонить менеджеру по указанным телефонам.<br><br>Теперь если вам нужна тротуарная плитка, вы знаете где ее можно приобрести. «Мастер Строй» - компания-производитель, которая гарантирует достойный уровень качества по приятной цене. <br><br> ООО «МАСТЕ</p>
+                        <button class="button">
+                        <div class="button__outer">
+                            <div class="button__inner">
+                                <span class="button__text">Приобрести</span>
+                            </div>
+                        </div>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        <div class="header">
+            <div class="container">
+                <div class="header__container"></div>
+            </div>
+        </div>
+    </main>
     <!-- header------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
     <div class="header">
         <div class="container">
